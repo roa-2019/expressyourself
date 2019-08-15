@@ -1,0 +1,10 @@
+<h1>Comments Page!</h1> 
+
+
+<img src="{{image}}" alt="{{name}}">
+<p>{{name}}</p>
+<p>{{description}}</p>
+{{#each comments}}
+<p>{{this.text}}</p>
+<p>{{this.rating}}</p>
+{{/each}}
