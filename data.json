@@ -1,17 +1,17 @@
 {
     "Places": [
-    {
-        "id": 1,
-        "category": "Cafe",
-        "name": "Pickle and Pie",
-        "image": "/Images/pickle-and-pie/pandp.jpg",
-        "description": "Pickle & Pie is a Wellington take on a NYC delicatessen. Chef Tim Tracey serves the classic pastrami sandwiches, salads, and of course, pickles & pies.",
-        "comments": [
-            {
-                "text": "It was good", 
-                "rating": 5
-            }    
-        ]
-    }
+        {
+            "id": 1,
+            "category": "Cafe",
+            "name": "Pickle and Pie",
+            "image": "/Images/pickle-and-pie/pandp.jpg",
+            "description": "Pickle & Pie is a Wellington take on a NYC delicatessen. Chef Tim Tracey serves the classic pastrami sandwiches, salads, and of course, pickles & pies.",
+            "comments": [
+                {
+                    "text": "It was good",
+                    "rating": 5
+                }
+            ]
+        }
     ]
 }
