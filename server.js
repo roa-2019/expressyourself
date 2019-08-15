@@ -7,10 +7,12 @@ const server = express()
 module.exports = server
 
 server.engine('hbs', hbs({
-  defaultLayout: true,
+  defaultLayout: 'main',
   extname: 'hbs',
 }))
 
 server.set('view engine', 'hbs')
 server.use(express.urlencoded({ extended: false }))
 server.use(routes)
+
+

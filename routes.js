@@ -5,5 +5,6 @@ const fs = require('fs')
 module.exports = router
 
 router.get('/', (req, res) => {
-  res.send("This is working!")
+  res.render('./partials/home')
 })
+
