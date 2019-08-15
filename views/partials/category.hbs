@@ -1,2 +1,12 @@
 <h1>Hello!</h1>
+
 <p>This is the category page! Pass me a category {{#if category}}{{category}}</p>{{else}}</p>{{/if}}
+
+<p>{{category}}</p>
+<p>{{name}}</p>
+<p>{{image}}</p>
+<p>{{description}}</p>
+{{#each comments}}
+<p>{{this}}</p>
+{{/each}}
+
