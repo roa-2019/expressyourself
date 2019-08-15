@@ -4,7 +4,7 @@ const fs = require('fs')
 
 module.exports = router
 
-router.get('/', (req, res)=> {
-  res.render('/index')
-  console.log("This is working!")
+router.get('/', (req, res) => {
+  res.render('./partials/home')
 })
+
