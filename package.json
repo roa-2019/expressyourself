@@ -1,0 +1,24 @@
+{
+  "name": "expressyourself",
+  "version": "1.0.1",
+  "description": "An absolute cracker of a site",
+  "main": "index.js",
+  "author": "EDA",
+  "license": "ISC",
+  "scripts": {
+    "debug": "nodemon --inspect index --ignore data.json",
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roa-2019/expressyourself"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
