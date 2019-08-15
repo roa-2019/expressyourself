@@ -1,13 +1,7 @@
 <h1>Hello!</h1>
 
 {{#each places}}
-<p>{{category}}</p>
 <p>{{name}}</p>
-<img src="{{image}}" alt="{{name}}">
-<p>{{description}}</p>
-{{#each comments}}
-<p>{{this.text}}</p>
-<p>{{this.rating}}</p>
-{{/each}}
+<a href="./comments/{{id}}"><img src="{{image}}" alt="{{name}}"></a>
 {{/each}}
 
