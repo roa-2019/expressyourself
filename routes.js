@@ -10,8 +10,12 @@ router.get('/', (req, res) => {
 })
 
 router.get('/category/:id', (req, res)=> {
-  const id = req.params.id
-  const array = data.Places
-  const newArray = array.filter(place => place.category == id)
-  res.render('./partials/category.hbs', newArray)
+  const categ = req.params.id
+  const array = data.places
+
+  const newArray = array.filter(place => place.category == categ)
+
+  const stuff = {places: newArray}
+  console.log(newArray, categ)
+  res.render('./partials/category.hbs', stuff)
 })
