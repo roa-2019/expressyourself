@@ -8,3 +8,6 @@ router.get('/', (req, res) => {
   res.render('./partials/home')
 })
 
+router.get('/category', (req, res)=> {
+  res.render('./partials/category.hbs')
+})
