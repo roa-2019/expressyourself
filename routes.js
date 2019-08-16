@@ -19,3 +19,9 @@ router.get('/category/:id', (req, res)=> {
   console.log(newArray, categ)
   res.render('./partials/category.hbs', stuff)
 })
+
+router.get('/category/comments/:id', (req, res)=> {
+  const id = req.params.id - 1
+  const place = data.places[id]
+  res.render('./partials/place-comments.hbs', place)
+})
