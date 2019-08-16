@@ -17,22 +17,26 @@ h1 {
 nav{
 
     background-color:   rgb(233, 221, 219);
+    height: 70px;
     font-size: 30px;
     font-style: none;
     font-family: 'Rozha One', serif;
     float: none;
     text-align: center;
-  
+    padding-top: 30px;
 }
 nav a{
     color: black;
     text-decoration: none;
+    text-align: center;
+    padding-top: 20px;
+    padding: 30px;
 
 
 }
 
 a:hover { 
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(212, 203, 203);
   }
   
 body {
@@ -40,8 +44,17 @@ body {
 
 }
 
+.imagecenter {
+ 
+  display: block;
+  margin: auto;
+  width: 50%;
+
+
+}
+
 p {
-    float: left;
+   
    
 }
 
