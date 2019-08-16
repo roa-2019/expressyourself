@@ -9,10 +9,10 @@
 <p>{{this.rating}}</p>
 {{/each}}
 
-<form>
+<form action='/category/comments/{{id}}' method='post'>
   Add comments: <br>
-  <input type="text" name="comments">
-  Rating: <br>
+  <input type="text" name="text">
+  <br>Rating: <br>
   <select name="rating">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -20,5 +20,5 @@
     <option value="4">4</option>
     <option value="5">5</option>
   </select>
+  <input type='submit'></input>
 </form>
-<button>Submit</button>
