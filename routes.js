@@ -25,3 +25,22 @@ router.get('/category/comments/:id', (req, res)=> {
   const place = data.places[id]
   res.render('./partials/place-comments.hbs', place)
 })
+
+router.post('/category/comments/:id', (req, res) => {
+  const id = req.params.id
+  const comments = data.places[id]
+  const newComment = {
+    text: req.body.text
+    rating: Number(req.body.rating)
+  }
+  
+  comments.push(newComment)
+
+  
+  fs.writeFile('./data.json', JSON.stringify(data), function(error) {
+      if (error) {
+        return res.status(500).send('Oh no! Somethings not right!') 
+      } 
+        return res.redirect('/category/comments/' + id)
+      })
+})
