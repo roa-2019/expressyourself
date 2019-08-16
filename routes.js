@@ -44,3 +44,4 @@ router.post('/category/comments/:id', (req, res) => {
     }
     return res.redirect('/category/comments/' + (id + 1))
   })
+})
