@@ -4,16 +4,17 @@
 <img src="{{image}}" alt="{{name}}" class="center">
 <p>{{name}}</p>
 <p>{{description}}</p>
+<div class= "printcomments" > 
 {{#each comments}}
 <p>{{this.text}}</p>
 <p>{{this.rating}}</p>
 {{/each}}
+</div>
 
-<form>
+<form action='/category/comments/{{id}}' method='post'>
   Add comments: <br>
-  <input type="text" name="comments">
-  <br>
-  Rating: 
+  <input type="text" name="text">
+  <br>Rating: <br>
   <select name="rating">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -21,5 +22,5 @@
     <option value="4">4</option>
     <option value="5">5</option>
   </select>
+  <input type='submit'></input>
 </form>
-<button>Submit</button>
