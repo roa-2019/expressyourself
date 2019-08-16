@@ -1,48 +1,29 @@
 {
-    "places": [
+  "places": [
+    {
+      "id": 1,
+      "category": "cafe",
+      "name": "Pickle and Pie",
+      "image": "/images/pickle-and-pie/pandp.jpg",
+      "description": "Pickle & Pie is a Wellington take on a NYC delicatessen. Chef Tim Tracey serves the classic pastrami sandwiches, salads, and of course, pickles & pies.",
+      "comments": [
         {
-            "id": 1,
-            "category": "cafe",
-            "name": "Pickle and Pie",
-            "image": "/images/pickle-and-pie/pandp.jpg",
-            "description": "Pickle & Pie is a Wellington take on a NYC delicatessen. Chef Tim Tracey serves the classic pastrami sandwiches, salads, and of course, pickles & pies.",
-            "comments": [
-                {
-                    "text": "It was good",
-                    "rating": 5
-                },
-                {
-                    "text": "sdjkldsklfklew",
-                    "rating": "1"
-                }
-            ],
-            "_locals": {}
+          "text": "It was good",
+          "rating": 5
         },
         {
-            "id": 2,
-            "category": "cafe",
-            "name": "Pickle and Pie",
-            "image": "/images/pickle-and-pie/pandp.jpg",
-            "description": "Pickle & Pie is a Wellington take on a NYC delicatessen. Chef Tim Tracey serves the classic pastrami sandwiches, salads, and of course, pickles & pies.",
-            "comments": [
-                {
-                    "text": "It was good",
-                    "rating": 5
-                }
-            ]
+          "text": "sdjkldsklfklew",
+          "rating": "1"
         },
         {
-            "id": 3,
-            "category": "cafe",
-            "name": "Pickle and Pie",
-            "image": "/images/pickle-and-pie/pandp.jpg",
-            "description": "Pickle & Pie is a Wellington take on a NYC delicatessen. Chef Tim Tracey serves the classic pastrami sandwiches, salads, and of course, pickles & pies.",
-            "comments": [
-                {
-                    "text": "It was good",
-                    "rating": 5
-                }
-            ]
+          "text": "CommentwqwqeQ",
+          "rating": "1"
+        },
+        {
+          "text": "Comment: serfewr",
+          "rating": "Rating: 1"
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -31,17 +31,17 @@ router.post('/category/comments/:id', (req, res) => {
   const allComments = data.places[id].comments
   console.log(id)
   const newComment = {
-    text: req.body.text,
-    rating: req.body.rating
+    text: "Comment: " + req.body.text,
+    rating: "Rating: " + req.body.rating
   }
-  
+
   allComments.push(newComment)
 
-  
-  fs.writeFile('./data.json', JSON.stringify(data), function(error) {
-      if (error) {
-        return res.status(500).send('Oh no! Somethings not right!') 
-      } 
-        return res.redirect('/category/comments/' + (id +1))
-      })
+
+  fs.writeFile('./data.json', JSON.stringify(data), function (error) {
+    if (error) {
+      return res.status(500).send('Oh no! Somethings not right!')
+    }
+    return res.redirect('/category/comments/' + (id + 1))
+  })
 })
