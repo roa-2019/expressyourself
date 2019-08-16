@@ -28,7 +28,7 @@ router.get('/category/comments/:id', (req, res)=> {
 
 router.post('/category/comments/:id', (req, res) => {
   const id = req.params.id
-  const comments = data.places[id]
+  const comments = data.places[id].comments
   const newComment = {
     text: req.body.text
     rating: Number(req.body.rating)
