@@ -1,13 +1,15 @@
 <h1>Comments Page!</h1>
 
 
-<img src="{{image}}" alt="{{name}}">
+<img src="{{image}}" alt="{{name}}" class="center">
 <p>{{name}}</p>
 <p>{{description}}</p>
+<div class= "printcomments" > 
 {{#each comments}}
 <p>{{this.text}}</p>
 <p>{{this.rating}}</p>
 {{/each}}
+</div>
 
 <form action='/category/comments/{{id}}' method='post'>
   Add comments: <br>

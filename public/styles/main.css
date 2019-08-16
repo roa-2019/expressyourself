@@ -59,11 +59,30 @@ body {
 }
 
 p {
-   
+   text-align: center;
    
 }
 
-footer {
+form {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+.printcomments {
+    background-color: rgb(233, 221, 219);
+    width: 60%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+button {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
